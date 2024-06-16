@@ -1,0 +1,23 @@
+<!-- HTML template -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Monitoring System</title>
+</head>
+<body>
+    <h1>Soil Monitoring System</h1>
+    
+    <h2>Latest Readings:</h2>
+    <p>Soil Moisture: {{ latest_readings['Soil Moisture'] }}</p>
+    <p>Temperature: {{ latest_readings['Temperature'] }}</p>
+    <p>Humidity: {{ latest_readings['Humidity'] }}</p>
+    <p>Rainfall: {{ latest_readings['Rainfall'] }}</p>
+
+    <h2>Previous Readings:</h2>
+    <pre>{{ previous_readings }}</pre>
+</body>
+</html>
+
